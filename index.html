@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>SMKn Raka</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+html { scroll-behavior: smooth; }
+.hero {
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+  url("https://images.unsplash.com/photo-1588072432836-e10032774350");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.section-img { height: 230px; object-fit: cover; width: 100%; }
+.card { transition: .3s; cursor: pointer; }
+.card:hover { transform: translateY(-8px); box-shadow: 0 8px 20px rgba(0,0,0,.3); }
+footer { background: #0d6efd; color: white; }
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#">SMKn Raka</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+<li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+<li class="nav-item"><a class="nav-link" href="#jurusan">Jurusan</a></li>
+<li class="nav-item"><a class="nav-link" href="#ppdb">PPDB</a></li>
+<li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<section class="hero text-center" id="beranda">
+<div class="container">
+<h1 class="display-4 fw-bold">SMKn Raka</h1>
+<p class="lead">Maju, Disiplin, dan Berprestasi</p>
+<a href="#ppdb" class="btn btn-warning btn-lg">Daftar Sekarang</a>
+</div>
+</section>
+
+<section class="py-5" id="profil">
+<div class="container text-center">
+<h2 class="fw-bold">Profil Sekolah</h2>
+<p>SMKn Raka adalah sekolah kejuruan unggulan dengan jurusan modern, fasilitas lengkap, dan lulusan siap kerja.</p>
+</div>
+</section>
+
+<section class="py-5 bg-light" id="jurusan">
+<div class="container">
+<h2 class="text-center fw-bold mb-4">Program Keahlian</h2>
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card shadow" data-bs-toggle="modal" data-bs-target="#tkjModal">
+<img src="https://images.unsplash.com/photo-1581091215367-59ab6c15b6c4" class="section-img">
+<div class="card-body text-center">
+<h5>TKJ</h5>
+<p>Teknik Komputer & Jaringan</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card shadow" data-bs-toggle="modal" data-bs-target="#aklModal">
+<img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c" class="section-img">
+<div class="card-body text-center">
+<h5>AKL</h5>
+<p>Akuntansi & Keuangan Lembaga</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card shadow" data-bs-toggle="modal" data-bs-target="#dkvModal">
+<img src="https://images.unsplash.com/photo-1626785774573-4b799315345d" class="section-img">
+<div class="card-body text-center">
+<h5>DKV</h5>
+<p>Desain Komunikasi Visual</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="py-5" id="ppdb">
+<div class="container">
+<h2 class="text-center fw-bold mb-4">PPDB 2026</h2>
+<div class="row g-4 align-items-center">
+<div class="col-md-6">
+<img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1" class="img-fluid rounded shadow">
+</div>
+<div class="col-md-6">
+<h4>Pendaftaran Peserta Didik Baru</h4>
+<p>Daftar melalui email resmi sekolah.</p>
+<a href="mailto:ppdb.smknraka@gmail.com?subject=PPDB%202026" class="btn btn-warning btn-lg">
+Daftar Sekarang
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-5 bg-light" id="kontak">
+<div class="container">
+<h2 class="text-center fw-bold mb-4">Hubungi Kami</h2>
+<div class="row g-4">
+
+<div class="col-md-6">
+<form>
+<div class="mb-3">
+<label>Nama Lengkap</label>
+<input type="text" class="form-control" placeholder="Masukkan nama lengkap">
+</div>
+<div class="mb-3">
+<label>Email</label>
+<input type="email" class="form-control" placeholder="Masukkan email aktif">
+</div>
+<div class="mb-3">
+<label>Pesan</label>
+<textarea class="form-control" rows="4" placeholder="Tulis pesan anda"></textarea>
+</div>
+<button type="submit" class="btn btn-primary w-100">Kirim Sekarang</button>
+</form>
+</div>
+
+<div class="col-md-6">
+<div class="card shadow p-3 mb-3">
+<p><b>Alamat:</b> Jl. Pendidikan No.1</p>
+<p><b>Email:</b> smknraka@gmail.com</p>
+<p><b>Telepon:</b> 0812-3456-7890</p>
+</div>
+
+<iframe src="https://www.google.com/maps?q=sekolah&output=embed"
+width="100%" height="250" style="border:0;" loading="lazy"></iframe>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- MODAL TKJ -->
+<div class="modal fade" id="tkjModal">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header bg-primary text-white">
+<h5>TKJ - Teknik Komputer & Jaringan</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<ul>
+<li>Instalasi jaringan LAN & WAN</li>
+<li>Server Linux & Mikrotik</li>
+<li>Perakitan komputer</li>
+<li>Perbaikan hardware & software</li>
+</ul>
+<a href="#ppdb" class="btn btn-warning">Daftar Sekarang</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- MODAL AKL -->
+<div class="modal fade" id="aklModal">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header bg-success text-white">
+<h5>AKL - Akuntansi & Keuangan Lembaga</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<ul>
+<li>Pembukuan perusahaan</li>
+<li>Laporan keuangan</li>
+<li>Perpajakan</li>
+<li>Administrasi perkantoran</li>
+</ul>
+<a href="#ppdb" class="btn btn-warning">Daftar Sekarang</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- MODAL DKV -->
+<div class="modal fade" id="dkvModal">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header bg-danger text-white">
+<h5>DKV - Desain Komunikasi Visual</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<ul>
+<li>Desain grafis</li>
+<li>Editing video</li>
+<li>Fotografi</li>
+<li>Branding & digital marketing</li>
+</ul>
+<a href="#ppdb" class="btn btn-warning">Daftar Sekarang</a>
+</div>
+</div>
+</div>
+</div>
+
+<footer class="text-center py-3">
+&copy; 2026 SMKn Raka
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
